@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<title>Туристическое агентство</title>
+</head>
+
+<body>
+
+	<header class="header" id="header">
+		<a href="#" class="header__link select" data-scroll="#intro" id="toIntro">Главная</a>
+		<a href="#" class="header__link" data-scroll="#catalog" id="toCatalog">Путёвки</a>
+		<a href="#" class="header__link" data-scroll="#about" id="toAbout">Об агенстве</a>
+		<a href="#" class="header__link" data-scroll="#reviews" id="toReviews">Отзывы</a>
+		<a href="#" class="header__link" data-scroll="#connection" id="toConnection">Обратная связь</a>
+	</header>
+
+	<main class="intro" id="intro">
+		<div class="container">
+			<div class="intro__content">
+				<div class="intro__col">
+					<div class="intro__top">
+						<h1 class="intro__title">
+							Открой для себя<br>
+							мир путешествий</h1>
+						<h2 class="intro__subtitle">Путешествуй по всему миру с удовольствием!</h2>
+					</div>
+					<div class="intro__down">
+						<p class="intro__text">Лучшие путёвки этого месяца:</p>
+						<div class="intro__inner">
+							<a href="#" class="products__col" data-modal="#modal__project_1">
+								<img src="images/vouchers/kazan/1.jpg" alt="moscow" class="products__img">
+								<div class="products__title">Казань</div>
+								<div class="products__number">01</div>
+								<div class="products__blok">
+									<img src="images/icons/arrow.svg" alt="" class="products__icon">
+								</div>
+							</a> <!-- /.products__col -->
+
+							<a href="#" class="products__col" data-modal="#modal__project_2">
+								<img src="images/vouchers/adler/1.jpg" alt="adler" class="products__img">
+								<div class="products__title">Адлер</div>
+								<div class="products__number">02</div>
+								<div class="products__blok">
+									<img src="images/icons/arrow.svg" alt="" class="products__icon">
+								</div>
+							</a> <!-- /.products__col -->
+						</div>
+					</div>
+				</div>
+				<div class="intro__col">
+					<form class="reg" id="reg">
+						<h3 class="reg__title">Регистрация</h3>
+
+						<div class="reg__control">
+							<input type="text" class="reg__input" placeholder="Имя" id="username">
+							<img src="images/icons/checked.svg" alt="" class="reg__check">
+							<img src="images/icons/cancel.svg" alt="" class="reg__close">
+						</div>
+
+						<div class="reg__control">
+							<input type="email" class="reg__input" placeholder="Email" id="email">
+							<img src="images/icons/checked.svg" alt="" class="reg__check">
+							<img src="images/icons/cancel.svg" alt="" class="reg__close">
+						</div>
+
+						<div class="reg__control">
+							<input type="password" class="reg__input" placeholder="Пароль" id="password">
+							<img src="images/icons/checked.svg" alt="" class="reg__check">
+							<img src="images/icons/cancel.svg" alt="" class="reg__close">
+						</div>
+
+						<div class="reg__control">
+							<input type="password" class="reg__input" placeholder="Повтор пароля" id="password2">
+							<img src="images/icons/checked.svg" alt="" class="reg__check">
+							<img src="images/icons/cancel.svg" alt="" class="reg__close">
+						</div>
+
+						<button class="reg__btn">Зарегистрироваться</button>
+
+					</form>
+
+					<div class="reg__complete" id="reg__complete">
+						<img src="images/icons/checked.svg" alt="" class="reg__icon">
+						<div class="reg__text">
+							Поздравляем!<br>
+							Вы успешно прошли<br>
+							регистрацию</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- /.container -->
+	</main> <!-- /.intro -->
+
+	<div class="catalog" id="catalog">
+		<div class="container">
+
+			<div class="reviews__description">
+				<h3 class="reviews__title">Выбери место, куда отправишься сам</h3>
+			</div>
+
+			<div class="products" id="products">
+
+				<a href="#" class="products__col" data-modal="#modal__project_1">
+					<img src="images/vouchers/kazan/1.jpg" alt="kazan" class="products__img">
+					<div class="products__title">Казань</div>
+					<div class="products__number">01</div>
+					<div class="products__blok">
+						<img src="images/icons/arrow.svg" alt="" class="products__icon">
+					</div>
+				</a> <!-- /.products__col -->
+
+				<a href="#" class="products__col" data-modal="#modal__project_2">
+					<img src="images/vouchers/adler/1.jpg" alt="adler" class="products__img">
+					<div class="products__title">Адлер</div>
+					<div class="products__number">02</div>
+					<div class="products__blok">
+						<img src="images/icons/arrow.svg" alt="" class="products__icon">
+					</div>
+				</a> <!-- /.products__col -->
+
+				<a href="#" class="products__col" data-modal="#modal__project_3">
+					<img src="images/vouchers/anapa/1.jpg" alt="anapa" class="products__img">
+					<div class="products__title">Анапа</div>
+					<div class="products__number">03</div>
+					<div class="products__blok">
+						<img src="images/icons/arrow.svg" alt="" class="products__icon">
+					</div>
+				</a> <!-- /.products__col -->
+
+				<a href="#" class="products__col" data-modal="#modal__project_4">
+					<img src="images/vouchers/gelendjik/1.jpg" alt="gelendjik" class="products__img">
+					<div class="products__title">Геленджик</div>
+					<div class="products__number">04</div>
+					<div class="products__blok">
+						<img src="images/icons/arrow.svg" alt="" class="products__icon">
+					</div>
+				</a> <!-- /.products__col -->
+
+				<a href="#" class="products__col" data-modal="#modal__project_5">
+					<img src="images/vouchers/sochi/1.jpg" alt="sochi" class="products__img">
+					<div class="products__title">Сочи</div>
+					<div class="products__number">05</div>
+					<div class="products__blok">
+						<img src="images/icons/arrow.svg" alt="" class="products__icon">
+					</div>
+				</a> <!-- /.products__col -->
+
+				<a href="#" class="products__col" data-modal="#modal__project_6">
+					<img src="images/vouchers/moscow/1.jpg" alt="moscow" class="products__img">
+					<div class="products__title">Москва</div>
+					<div class="products__number">06</div>
+					<div class="products__blok">
+						<img src="images/icons/arrow.svg" alt="" class="products__icon">
+					</div>
+				</a> <!-- /.products__col -->
+
+			</div> <!-- /.products -->
+		</div> <!-- /.container -->
+	</div> <!-- /.catalog -->
+
+	<div class="about" id="about">
+		<div class="container">
+			<div class="reviews__description">
+				<h3 class="reviews__title">Об агентстве</h3>
+			</div>
+
+			<div class="about__content">
+				<div class="about__text">
+					<p>Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем
+						так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух
+						тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney.</p>
+				</div>
+				<div class="about__img">
+					<img src="images/bg4.jpg" alt="about-company">
+				</div>
+			</div>
+
+			<div class="about__content">
+				<div class="about__img">
+					<img src="images/bg5.jpg" alt="about-company">
+				</div>
+				<div class="about__text">
+					<p>Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем
+						так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух
+						тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney.</p>
+				</div>
+			</div>
+		</div> <!-- /.container -->
+	</div> <!-- /.about -->
+
+	<div class="reviews" id="reviews">
+		<div class="container reviews--container">
+			<div class="reviews__description">
+				<h3 class="reviews__title">Что говорят путешественники</h3>
+			</div>
+
+			<div class="reviews__slider">
+
+				<div data-slider="reviewsSlider">
+					<div>
+						<div class="reviews__wrapper">
+							<div class="reviews__photo">
+								<img src="images/reviews/1.jpg" alt="">
+							</div>
+							<div class="reviews__inner">
+								<div class="reviews__review">Давно выяснено, что при оценке дизайна и композиции
+									читаемый
+									текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает
+									более
+									или менее стандартное заполнение шаблона, а также...</div>
+								<div class="reviews__name">Лоусон С.А.</div>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<div class="reviews__wrapper">
+							<div class="reviews__photo">
+								<img src="images/reviews/2.jpg" alt="">
+							</div>
+							<div class="reviews__inner">
+								<div class="reviews__review">Давно выяснено, что при оценке дизайна и композиции
+									читаемый
+									текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает
+									более
+									или менее стандартное заполнение шаблона, а также...</div>
+								<div class="reviews__name">Маск И.И.</div>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<div class="reviews__wrapper">
+							<div class="reviews__photo">
+								<img src="images/reviews/3.jpg" alt="">
+							</div>
+							<div class="reviews__inner">
+								<div class="reviews__review">Давно выяснено, что при оценке дизайна и композиции
+									читаемый
+									текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает
+									более
+									или менее стандартное заполнение шаблона, а также...</div>
+								<div class="reviews__name">Джобс С.Н.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<button class="reviews__prev slickPrev">
+					<img src="images/icons/prev.svg" alt="prev">
+				</button>
+				<button class="reviews__next slickNext">
+					<img src="images/icons/next.svg" alt="next">
+				</button>
+
+			</div> <!-- /.reviews__slider -->
+		</div> <!-- /.container -->
+	</div> <!-- /.reviews -->
+
+	<div class="connection" id="connection">
+		<div class="container">
+			<div class="reviews__description">
+				<h3 class="reviews__title">Свяжитесь с нами</h3>
+			</div>
+
+			<form action="" class="connection__form" id="connectionForm">
+				<div class="connection__left">
+					<div class="connection__control">
+						<input type="name" class="connection__input" placeholder="Имя" id="usernameCon">
+						<img src="images/icons/checked.svg" alt="" class="connection__check">
+						<img src="images/icons/cancel.svg" alt="" class="connection__close">
+					</div>
+
+					<div class="connection__control">
+						<input type="email" class="connection__input" placeholder="Email" id="emailCon">
+						<img src="images/icons/checked.svg" alt="" class="connection__check">
+						<img src="images/icons/cancel.svg" alt="" class="connection__close">
+					</div>
+				</div> <!-- /.connection__left -->
+
+				<div class="connection__right">
+					<div class="connection__control">
+						<textarea name="" class="connection__textarea" placeholder="Текст сообщения"
+							id="textarea"></textarea>
+						<img src="images/icons/checked.svg" alt="" class="connection__check">
+						<img src="images/icons/cancel.svg" alt="" class="connection__close">
+					</div>
+				</div> <!-- /.connection__right -->
+
+				<button class="connection__btn">Отправить</button>
+			</form>
+		</div> <!-- /.container -->
+	</div> <!-- /.connection -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__links">
+					<div class="footer__col">
+						<a href="" class="footer__link" target="_blank">
+							О нас
+						</a>
+						<a href="" class="footer__link" target="_blank">
+							Политика<br>
+							конфиденциальности
+						</a>
+					</div>
+					<div class="footer__col">
+						<a href="" class="footer__link" target="_blank">
+							Наша команда
+						</a>
+						<a href="" class="footer__link" target="_blank">
+							Соглашение на обработку <br>
+							персональных данных
+						</a>
+					</div>
+				</div>
+
+				<div class="footer__social">
+					<a href="" target="_blank">
+						<img class="intro__icon footer__icon" src="images/icons/youtube.svg" alt="youtube">
+					</a>
+					<a href="" target="_blank">
+						<img class="intro__icon footer__icon" src="images/icons/instagram.svg" alt="inst">
+					</a>
+					<a href="" target="_blank">
+						<img class="intro__icon footer__icon" src="images/icons/tik-tok.svg" alt="tiktok">
+					</a>
+					<a href="" target="_blank">
+						<img class="intro__icon footer__icon" src="images/icons/vk.svg" alt="vk">
+					</a>
+				</div>
+			</div>
+		</div> <!-- /.container -->
+	</footer>
+
+
+
+	<!-- Modal -->
+
+	<!-- Modal Complete -->
+	<div class="modal__complete" id="modalComplete">
+		<div class="complete__inner">
+
+			<button class="modal__close" data-closeCC>
+				<img src="images/icons/close.svg" alt="close">
+			</button>
+
+			<img src="images/icons/checked.svg" alt="checked" class="compllete__icon">
+			<div class="complete__text">
+				Место успешно забронировано,<br>
+				сообщение отправлено на почту
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Modal Cansel -->
+	<div class="modal__cancel" id="modalCancel">
+		<div class="complete__inner">
+
+			<button class="modal__close" data-closeCCC>
+				<img src="images/icons/close.svg" alt="close">
+			</button>
+
+			<img src="images/icons/cancel.svg" alt="checked" class="compllete__icon">
+			<div class="cancel__text">
+				Забронировать место не получится,<br>
+				пока вы не пройдете регистрацию
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Modal_1 -->
+	<div class="modal" id="modal__project_1">
+		<div class="modal__dialog">
+
+			<button class="modal__close" data-close>
+				<img src="images/icons/close.svg" alt="close">
+			</button>
+
+			<div class="modal__content">
+
+				<div class="modal__discription">
+					<h3 class="modal__title">Казань</h3>
+					<p class="modal__text">
+						Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации,
+						например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если
+						вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой
+						в середине абзаца.
+					</p>
+				</div>
+
+				<div class="modal__inner">
+					<div class="modal__slider">
+						<div data-slider="modalSlider">
+							<div>
+								<img class="modal__photo" src="images/vouchers/kazan/2.jpg" alt="">
+							</div>
+							<div>
+								<img class="modal__photo" src="images/vouchers/kazan/3.jpg" alt="">
+							</div>
+							<div>
+								<img class="modal__photo" src="images/vouchers/kazan/4.jpg" alt="">
+							</div>
+							<div>
+								<img class="modal__photo" src="images/vouchers/kazan/5.jpg" alt="">
+							</div>
+							<div>
+								<img class="modal__photo" src="images/vouchers/kazan/6.jpg" alt="">
+							</div>
+						</div>
+						<button class="modal__prev slickPrev">
+							<img src="images/icons/prev.svg" alt="">
+						</button>
+						<button class="modal__next slickNext">
+							<img src="images/icons/next.svg" alt="">
+						</button>
+					</div>
+					<div class="payment">37 990 руб/неделя</div>
+					<div class="modal__wrapper">
+						<button class="modal__btn" data-cancel="#modalCancel"
+							data-complete="#modalComplete">Забронировать</button>
+					</div>
+				</div> <!-- /.modal__inner -->
+
+			</div>
+		</div> <!-- /.modal__dialog -->
+	</div> <!-- /.modal -->
+
+	<!-- Modal_2 -->
+	<div class="modal" id="modal__project_2">
+		<div class="modal__dialog">
+
+			<button class="modal__close" data-close>
+				<img src="images/icons/close.svg" alt="close">
+			</button>
+
+			<div class="modal__content">
+
+				<div class="modal__discription">
+					<h3 class="modal__title">Адлер</h3>
+					<p class="modal__text">
+						Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации,
+						например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если
+						вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой
+						в середине абзаца.
+					</p>
+				</div>
+
+				<div class="modal__inner">
+					<div class="modal__slider">
+						<div data-slider="modalSlider">
+							<div>
+								<img class="modal__photo" src="images/vouchers/adler/2.jpg" alt="">
+							</div>
+							<div>
+								<img class="modal__photo" src="images/vouchers/adler/3.jpg" alt="">
+							</div>
+							<div>
+								<img class="modal__photo" src="images/vouchers/adler/4.jpg" alt="">
+							</div>
+							<div>
+								<img class="modal__photo" src="images/vouchers/adler/5.jpg" alt="">
+							</div>
+							<div>
+								<img class="modal__photo" src="images/vouchers/adler/6.jpg" alt="">
+							</div>
+						</div>
+						<button class="modal__prev slickPrev">
+							<img src="images/icons/prev.svg" alt="">
+						</button>
+						<button class="modal__next slickNext">
+							<img src="images/icons/next.svg" alt="">
+						</button>
+					</div>
+					<div class="payment">37 990 руб/неделя</div>
+					<div class="modal__wrapper">
+						<button class="modal__btn" data-cancel="#modalCancel"
+							data-complete="#modalComplete">Забронировать</button>
+					</div>
+				</div> <!-- /.modal__inner -->
+
+			</div>
+		</div> <!-- /.modal__dialog -->
+	</div> <!-- /.modal -->
+
+	<!-- Modal_3 -->
+	<div class="modal" id="modal__project_3">
+		<div class="modal__dialog">
+
+			<button class="modal__close" data-close>
+				<img src="images/icons/close.svg" alt="close">
+			</button>
+
+			<div class="modal__content">
+
+				<div class="modal__discription">
+					<h3 class="modal__title">Анапа</h3>
+					<p class="modal__text">
+						Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации,
+						например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если
+						вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой
+						в середине абзаца.
+					</p>
+				</div>
+
+				<div class="modal__inner">
+					<div class="modal__slider">
+						<div data-slider="modalSlider">
+							<div>
+								<img class="modal__photo" src="images/vouchers/anapa/2.jpg" alt="">
+							</div>
+							<div>
+								<img class="modal__photo" src="images/vouchers/anapa/3.jpg" alt="">
+							</div>
+							<div>
+								<img class="modal__photo" src="images/vouchers/anapa/4.jpg" alt="">
+							</div>
+							<div>
+								<img class="modal__photo" src="images/vouchers/anapa/5.jpg" alt="">
+							</div>
+							<div>
+								<img class="modal__photo" src="images/vouchers/anapa/6.jpg" alt="">
+							</div>
+						</div>
+						<button class="modal__prev slickPrev">
+							<img src="images/icons/prev.svg" alt="">
+						</button>
+						<button class="modal__next slickNext">
+							<img src="images/icons/next.svg" alt="">
+						</button>
+					</div>
+					<div class="payment">37 990 руб/неделя</div>
+					<div class="modal__wrapper">
+						<button class="modal__btn" data-cancel="#modalCancel"
+							data-complete="#modalComplete">Забронировать</button>
+					</div>
+				</div> <!-- /.modal__inner -->
+
+			</div>
+		</div> <!-- /.modal__dialog -->
+	</div> <!-- /.modal -->
+
+	<!-- Modal_4 -->
+	<div class="modal" id="modal__project_4">
+		<div class="modal__dialog">
+
+			<button class="modal__close" data-close>
+				<img src="images/icons/close.svg" alt="close">
+			</button>
+
+			<div class="modal__content">
+
+				<div class="modal__discription">
+					<h3 class="modal__title">Геленджик</h3>
+					<p class="modal__text">
+						Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации,
+						например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если
+						вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой
+						в середине абзаца.
+					</p>
+				</div>
+
+				<div class="modal__inner">
+					<div class="modal__slider">
+						<div data-slider="modalSlider">
+							<div>
+								<img class="modal__photo" src="images/vouchers/gelendjik/2.jpg" alt="">
+							</div>
+							<div>
+								<img class="modal__photo" src="images/vouchers/gelendjik/3.jpg" alt="">
+							</div>
+							<div>
+								<img class="modal__photo" src="images/vouchers/gelendjik/4.jpg" alt="">
+							</div>
+							<div>
+								<img class="modal__photo" src="images/vouchers/gelendjik/5.jpg" alt="">
+							</div>
+							<div>
+								<img class="modal__photo" src="images/vouchers/gelendjik/6.jpg" alt="">
+							</div>
+						</div>
+						<button class="modal__prev slickPrev">
+							<img src="images/icons/prev.svg" alt="">
+						</button>
+						<button class="modal__next slickNext">
+							<img src="images/icons/next.svg" alt="">
+						</button>
+					</div>
+					<div class="payment">37 990 руб/неделя</div>
+					<div class="modal__wrapper">
+						<button class="modal__btn" data-cancel="#modalCancel"
+							data-complete="#modalComplete">Забронировать</button>
+					</div>
+				</div> <!-- /.modal__inner -->
+
+			</div>
+		</div> <!-- /.modal__dialog -->
+	</div> <!-- /.modal -->
+
+	<!-- Modal_5 -->
+	<div class="modal" id="modal__project_5">
+		<div class="modal__dialog">
+
+			<button class="modal__close" data-close>
+				<img src="images/icons/close.svg" alt="close">
+			</button>
+
+			<div class="modal__content">
+
+				<div class="modal__discription">
+					<h3 class="modal__title">Сочи</h3>
+					<p class="modal__text">
+						Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации,
+						например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если
+						вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой
+						в середине абзаца.
+					</p>
+				</div>
+
+				<div class="modal__inner">
+					<div class="modal__slider">
+						<div data-slider="modalSlider">
+							<div>
+								<img class="modal__photo" src="images/vouchers/sochi/2.jpg" alt="">
+							</div>
+							<div>
+								<img class="modal__photo" src="images/vouchers/sochi/3.jpg" alt="">
+							</div>
+							<div>
+								<img class="modal__photo" src="images/vouchers/sochi/4.jpg" alt="">
+							</div>
+							<div>
+								<img class="modal__photo" src="images/vouchers/sochi/5.jpg" alt="">
+							</div>
+							<div>
+								<img class="modal__photo" src="images/vouchers/sochi/6.jpg" alt="">
+							</div>
+						</div>
+						<button class="modal__prev slickPrev">
+							<img src="images/icons/prev.svg" alt="">
+						</button>
+						<button class="modal__next slickNext">
+							<img src="images/icons/next.svg" alt="">
+						</button>
+					</div>
+					<div class="payment">37 990 руб/неделя</div>
+					<div class="modal__wrapper">
+						<button class="modal__btn" data-cancel="#modalCancel"
+							data-complete="#modalComplete">Забронировать</button>
+					</div>
+				</div> <!-- /.modal__inner -->
+
+			</div>
+		</div> <!-- /.modal__dialog -->
+	</div> <!-- /.modal -->
+
+	<!-- Modal_6 -->
+	<div class="modal" id="modal__project_6">
+		<div class="modal__dialog">
+
+			<button class="modal__close" data-close>
+				<img src="images/icons/close.svg" alt="close">
+			</button>
+
+			<div class="modal__content">
+
+				<div class="modal__discription">
+					<h3 class="modal__title">Москва</h3>
+					<p class="modal__text">
+						Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации,
+						например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если
+						вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой
+						в середине абзаца.
+					</p>
+				</div>
+
+				<div class="modal__inner">
+					<div class="modal__slider">
+						<div data-slider="modalSlider">
+							<div>
+								<img class="modal__photo" src="images/vouchers/moscow/2.jpg" alt="">
+							</div>
+							<div>
+								<img class="modal__photo" src="images/vouchers/moscow/3.jpg" alt="">
+							</div>
+							<div>
+								<img class="modal__photo" src="images/vouchers/moscow/4.jpg" alt="">
+							</div>
+							<div>
+								<img class="modal__photo" src="images/vouchers/moscow/5.jpg" alt="">
+							</div>
+							<div>
+								<img class="modal__photo" src="images/vouchers/moscow/6.jpg" alt="">
+							</div>
+						</div>
+						<button class="modal__prev slickPrev">
+							<img src="images/icons/prev.svg" alt="">
+						</button>
+						<button class="modal__next slickNext">
+							<img src="images/icons/next.svg" alt="">
+						</button>
+					</div>
+					<div class="payment">37 990 руб/неделя</div>
+					<div class="modal__wrapper">
+						<button class="modal__btn" data-cancel="#modalCancel"
+							data-complete="#modalComplete">Забронировать</button>
+					</div>
+				</div> <!-- /.modal__inner -->
+
+			</div>
+		</div> <!-- /.modal__dialog -->
+	</div> <!-- /.modal -->
+
+
+
+
+
+	<!-- JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/app.js"></script>
+
+</body>
+
+</html>
